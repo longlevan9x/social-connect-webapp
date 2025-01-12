@@ -1,68 +1,59 @@
-# My Angular App
+# SocialConnectWebapp
 
-This is a simple Angular application that serves as a starting point for building web applications using Angular.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
 
-## Project Structure
+## Development server
 
-The project is organized as follows:
+To start a local development server, run:
 
-```
-social-connect-webapp
-├── src
-│   ├── app
-│   │   ├── app.component.html      # HTML template for the main application component
-│   │   ├── app.component.ts        # Root component of the application
-│   │   ├── app.module.ts           # Root module of the application
-│   │   └── app.component.css       # CSS styles for the AppComponent
-│   ├── assets                       # Directory for static assets (images, fonts, etc.)
-│   ├── environments                 # Environment configuration files
-│   │   ├── environment.prod.ts     # Production environment settings
-│   │   └── environment.ts          # Development environment settings
-│   ├── index.html                  # Main HTML file (entry point)
-│   ├── main.ts                     # Main entry point for the Angular application
-│   ├── polyfills.ts                # Polyfills for browser compatibility
-│   ├── styles.css                  # Global styles for the application
-│   └── test.ts                     # Testing environment setup
-├── angular.json                    # Angular CLI configuration file
-├── package.json                    # npm configuration file (dependencies and scripts)
-└── tsconfig.json                   # TypeScript configuration file
+```bash
+ng serve
 ```
 
-## Getting Started
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-To get started with this project, follow these steps:
+## Code scaffolding
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd social-connect-webapp
-   ```
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-2. **Install dependencies:**
-   ```
-   npm install
-   ```
+```bash
+ng generate component component-name
+```
 
-3. **Run the application:**
-   ```
-   ng serve
-   ```
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-4. **Open your browser and navigate to:**
-   ```
-   http://localhost:4200
-   ```
+```bash
+ng generate --help
+```
 
-## Features
+## Building
 
-- Modular architecture
-- Environment configurations for development and production
-- Responsive design with CSS styles
+To build the project run:
 
-## Contributing
+```bash
+ng build
+```
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## License
+## Running unit tests
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
